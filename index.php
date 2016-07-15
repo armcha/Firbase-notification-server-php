@@ -7,7 +7,7 @@
     display: block;
     width: 50%;
     margin: 2% auto;
-    height: 40px;
+    height: 30px;
     font-size: 100%;
 	border:1px solid #339596;
 }
@@ -16,7 +16,7 @@
     display: block;
     width: 50%;
     margin: 2% auto;
-    height: 40px;
+    height: 30px;
     font-size: 100%;
 	border:1px solid #339596;
 }
@@ -24,7 +24,7 @@
     display: block;
      width: 50%;
     margin: 2% auto;
-    height: 40px;
+    height: 30px;
     font-size: 100%;
 	border:1px solid #339596;
 }
@@ -58,6 +58,7 @@
 	    padding: 1% 0;
     text-align: center;
     width: 100%;
+	height: 30px;
     text-decoration: none;
     background-color: #339596;
     margin: 0;
@@ -67,10 +68,11 @@
 	.headerBody {
     text-align: center;
     align: center;
+	height: 30px;
 	vertical-align: middle;
     background-color: #339596;
     margin: 0px;
-	 height: 18%;
+	 height: 10%;
     color: #ffffff;
 	}.nuulMargin {
   
@@ -89,11 +91,15 @@
 			
 			<input type='text' name='server_key' placeholder='Enter Server key' id="first" class = "formId"/>
 			<input type='text' name='token' placeholder='Enter Device Registration Token'  id="second" class = "formId"/>
+			<input type='text' name='image_url' placeholder='Enter image url(optional)'  id="second" class = "formId"/>
 			<input name='title' placeholder='Enter a title' id="title" class = "formId"/>
 			<input name='message' placeholder='Enter a message' id="message" class = "formId"/>
 			
 			<button id="sendButton">Send Notification</button>
+			
 		</form>
+
+		
 		<p class = "formId">
 			<?php
 			
