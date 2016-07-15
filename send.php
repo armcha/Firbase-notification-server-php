@@ -8,19 +8,22 @@
 	
 	//Getting the token
 	$token = array($_POST['token']);  // up to 1000 in one request
-	 //$target = array('token1','token2','...'); // up to 1000 in one request
+	//$target = array('token1','token2','...'); // up to 1000 in one request
+	 
+	//Getting the big image url
+	$image_url = $_POST['image_url'];
 
-	
 	$data = array
 		(
-			'message' 	=> $message,
-			'title'		=> $title,
-			'subtitle'	=> 'This is a subtitle',
-			'tickerText'=> 'Ticker text here',
-			'vibrate'	=> 1,
-			'sound'		=> 1,
-			'largeIcon'	=> 'large_icon',
-			'smallIcon'	=> 'small_icon'
+			'message' 		=> $message,
+			'title'			=> $title,
+			'subtitle'		=> 'This is a subtitle',
+			'tickerText'	=> 'Ticker text here',
+			'vibrate'		=> 1,
+			'sound'			=> 1,
+			'bigPictureUrl'	=> $image_url,
+			'largeIcon'		=> 'large_icon',
+			'smallIcon'		=> 'small_icon'
 		);
 
  function sendMessage($data,$token){
